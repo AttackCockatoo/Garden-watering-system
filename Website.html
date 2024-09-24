@@ -22,10 +22,17 @@
     <input type="radio" id="Off" name="EnableWatering" value="Off">
     <label for="Off">Off</label><br>
 
-   <input type="checkbox" id="9amWater" name="9amWater" value="9amWater">
-    <label for="9amWater"> 9amWater</label><br>
-   <input type="checkbox" id="12pMWater" name="12pMWater" value="12pMWater">
-    <label for="12pMWater"> 12pMWater</label><br>
+   <label for="9amWater">9amWater:</label>
+    <input type="radio" id="ON" name="9amWater" value="ON">
+    <label for="Off">ON</label>
+    <input type="radio" id="Off" name="9amWater" value="Off">
+    <label for="Off">Off</label><br>
+
+   <label for="12pMWater">12pMWater:</label>
+    <input type="radio" id="ON" name="12pMWater" value="ON">
+    <label for="Off">ON</label>
+    <input type="radio" id="Off" name="12pMWater" value="Off">
+    <label for="Off">Off</label><br>
     
    <label for="NextWatering">NextWatering:</label>
     <input type="date" id="NextWatering" name="NextWatering"><br><br>
@@ -36,7 +43,7 @@
     <option value="2">2</option>
     <option value="3">3</option>
     <option value="4">4</option>
-   </select>
+   </select><br>
      
    <label for="WaterDuration">WaterDuration:</label>
    <select name="WaterDuration" id="WaterDuration">
