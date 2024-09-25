@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<form>
+<form action="/action_page.php">
  <fieldset>
   <p> Water tank is at 50% </p>
   <label for="WaterSource">WaterSource:</label>
@@ -10,13 +10,24 @@
    <option value="Tank">Tank</option>
    <option value="Town">Tank</option>
   </select>
+  <input type="submit" value="Submit">
   </fieldset>
  </form>
 
- <form>
-  <fieldset>
-   <legend>VegiBedA:</legend>
 
+ <form action="/action_page.php">
+  <fieldset id="myFieldset">
+   <legend>VegiBedA:</legend>
+   
+   <label for="SelectBed">SelectBed:</label>
+   <select name="SelectBed" id="SelectBed">
+    <option value="1">1</option>
+    <option value="2">2</option>
+   </select>
+   
+   <button onclick="myFunction()">Click me</button><br>
+
+   
    <label for="EnableWatering">EnableWatering:</label>
     <input type="radio" id="ON" name="EnableWatering" value="ON">
     <label for="Off">ON</label>
@@ -52,12 +63,17 @@
     <option value="10">10</option>
     <option value="15">15</option>
     <option value="20">20</option>
-   </select>
+   </select><br>
    
    <input type="submit" value="Submit">
      
  </fieldset>
 </form> 
 
+<script>
+function myFunction() {
+  document.getElementById("EnableWatering").setAttribute("value","ON");
+}
+</script>
 </body>
 </html>
