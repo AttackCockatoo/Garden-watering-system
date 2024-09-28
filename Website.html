@@ -14,66 +14,20 @@
   </fieldset>
  </form>
 
-
- <form action="/action_page.php">
-  <fieldset id="myFieldset">
-   <legend>VegiBedA:</legend>
+<form action="/action_page.php">
+ <fieldset id="myFieldset">
+  <legend>VegiBedA:</legend>
    
-   <label for="SelectBed">SelectBed:</label>
-   <select name="SelectBed" id="SelectBed">
-    <option value="1">1</option>
-    <option value="2">2</option>
-   </select>
+  <label for="SelectBed">SelectBed:</label>
+  <select name="SelectBed" id="SelectBed">
+   <option value="1">1</option>
+   <option value="2">2</option>
+  </select>
    
-   <button onclick="myFunction()">Click me</button><br>
+  <button onclick="myFunction()">Click me</button><br>
 
-   
-   <label for="EnableWatering">EnableWatering:</label>
-    <input type="radio" id="ON" name="EnableWatering" value="ON">
-    <label for="Off">ON</label>
-    <input type="radio" id="Off" name="EnableWatering" value="Off">
-    <label for="Off">Off</label><br>
-
-   <label for="9amWater">9amWater:</label>
-    <input type="radio" id="ON" name="9amWater" value="ON">
-    <label for="Off">ON</label>
-    <input type="radio" id="Off" name="9amWater" value="Off">
-    <label for="Off">Off</label><br>
-
-   <label for="12pMWater">12pMWater:</label>
-    <input type="radio" id="ON" name="12pMWater" value="ON">
-    <label for="Off">ON</label>
-    <input type="radio" id="Off" name="12pMWater" value="Off">
-    <label for="Off">Off</label><br>
-    
-   <label for="NextWatering">NextWatering:</label>
-    <input type="date" id="NextWatering" name="NextWatering"><br>
-    
-   <label for="WaterInterval">days between watering:</label>
-   <select name="WaterInterval" id="WaterInterval">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-   </select><br>
-     
-   <label for="WaterDuration">WaterDuration:</label>
-   <select name="WaterDuration" id="WaterDuration">
-    <option value="5">5</option>
-    <option value="10">10</option>
-    <option value="15">15</option>
-    <option value="20">20</option>
-   </select><br>
-   
-   <input type="submit" value="Submit">
-     
- </fieldset>
-</form> 
-
-<script>
-function myFunction() {
-  document.getElementById("EnableWatering").setAttribute("value","ON");
-}
-</script>
-</body>
-</html>
+   <label for="WhebToWater">WhebToWater:</label>
+   <select name="WhebToWater" id="WhebToWater">
+   <option value=0>Dont water</option>
+   <option value=1>9 am only</option>
+   <option value=2>9 am and midday</option>
